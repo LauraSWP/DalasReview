@@ -1,6 +1,6 @@
 {
   "name": "DalasReview: Ahora en Chrome",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Extensión para los Pambisitos de DalasReview",
   "homepage_url": "https://github.com/LauraSWP/DalasReview",
@@ -10,6 +10,7 @@
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
+"content_security_policy": "script-src 'self' 'unsafe-eval' https://www.googleapis.com https://platform.twitter.com https://cdn.syndication.twimg.com; object-src 'self'",
   "background": {
     "scripts": [
       "src/bg/background.js"
