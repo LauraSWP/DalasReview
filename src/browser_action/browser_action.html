@@ -1,17 +1,73 @@
 <!doctype html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="./browser_action.css" />
-<script src="/../js/jquery/jquery.min.js"></script>
-<script src="./browser_action.js"></script>
-<script src="./youtube.js"></script>
+	  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+		<script src="/../js/jquery/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+		<script src="./browser_action.js"></script>
+		<script src="./youtube.js"></script>
+		<script src="/../src/bg/acho.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Font Awesome CSS -->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="header">
+	<h1 id="background">Dalas Review</h1>
+	<div id="imagen"></div>
+
+</div>
 <div id="mainPopup">
-<div id="DalasReview" class="hide">HOLA
-	<iframe class="latestVideoEmbed" vnum='0' cid="UCgRr2pZaGeaZVN6LfbvQk9w" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-	<iframe class="latestVideoEmbed" vnum='1' cid="UCgRr2pZaGeaZVN6LfbvQk9w" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-		<iframe class="latestVideoEmbed" vnum='2' cid="UCgRr2pZaGeaZVN6LfbvQk9w" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+	<div id="container">
+
+<div id="DalasReview" class="hide">
+	<button id="closeButton1" title="Cerrar" class="btn hide glow-on-hover"><i class="fa fa-close"></i></button>
+	<h2>Últimos Videos: Canal Principal</h2>
+	<iframe id="latest" class="latestVideoEmbed" vnum='0' cid="UCgRr2pZaGeaZVN6LfbvQk9w" width="300" height="240" frameborder="0" allowfullscreen></iframe>
+	<iframe class="latestVideoEmbed" vnum='1' cid="UCgRr2pZaGeaZVN6LfbvQk9w" width="300" height="240" frameborder="0" allowfullscreen></iframe>
+		<iframe class="latestVideoEmbed" vnum='2' cid="UCgRr2pZaGeaZVN6LfbvQk9w" width="300" height="240" frameborder="0" allowfullscreen></iframe>
+		<a id="youtube1" href="https://www.youtube.com/user/DalasReview" class="btn btn-primary glow-on-hover" target="_blank">VER MÁS EN YOUTUBE</a>
 </div>
-<button id="showDalasReview"></button>
-	<div id="tweecool">
-	<a class="twitter-timeline" href="https://twitter.com/DalasReview?ref_src=twsrc%5Etfw"></a> <script async src="./twitter.js" charset="utf-8"></script> </div>
-<h1>ME COMO MI CACA</h1>
-<p>BLAH BLAH</p>
+<div id="DalasSinFiltros" class="hide">
+		<button id="closeButton2" title="Cerrar" class="btn hide glow-on-hover"><i class="fa fa-close"></i></button>
+			<h2>Últimos Videos: Dalas Sin Filtros</h2>
+	<iframe id="latest" class="latestVideoEmbed" vnum='0' cid="UCUqvWUXerEGX33z3wmOnPrw" width="300" height="240" frameborder="0" allowfullscreen></iframe>
+	<iframe class="latestVideoEmbed" vnum='1' cid="UCUqvWUXerEGX33z3wmOnPrw" width="300" height="240" frameborder="0" allowfullscreen></iframe>
+		<iframe class="latestVideoEmbed" vnum='2' cid="UCUqvWUXerEGX33z3wmOnPrw" width="300" height="240" frameborder="0" allowfullscreen></iframe>
+		<a id="youtube1" href="https://www.youtube.com/user/DTeamVlogs" class="btn btn-primary glow-on-hover" target="_blank">VER MÁS EN YOUTUBE</a>
 </div>
+
+	<div id="tweecool" class="hide">
+			<button id="closeButton3" title="Cerrar" class="btn hide glow-on-hover"><i class="fa fa-close"></i></button>
+						<h2>Últimos Tweets</h2>
+	<a class="twitter-timeline" href="https://twitter.com/DalasReview"></a> <script async src="./twitter.js" charset="utf-8"></script> </div>
+<div id="panel" class="show">
+<div id="saludo" class="show"></div>
+	<a id="twitch" href="https://www.twitch.tv/dalasreview" target="_blank" title="Ver Twitch" class="btn btn-primary glow-on-hover"><i class="fa fa-twitch"></i></a>
+	<a id="instagram" href="https://www.instagram.com/dalasito/" target="_blank" title="Ver Instagram" class="btn btn-primary glow-on-hover"><i class="fa fa-instagram"></i></a>
+<a id="tiktok" title="Ver TikTok" class="btn btn-primary glow-on-hover"><img src="/../icons/tiktok.png"></a>
+		<a  id="stardeos" href="https://stardeos.com/" target="_blank" title="Ir a Stardeos" class="btn btn-primary glow-on-hover"><img src="/../icons/stardeos.png"></a>
+			<a  id="discord" href="https://discord.gg/dalas" target="_blank" title="Ir a Discord" class="btn btn-primary glow-on-hover"><img src="/../icons/discord.png"></a>
+			<a id="patreon" href="https://www.patreon.com/bePatron?u=6872568" class="btn btn-primary glow-on-hover" target="_blank">¡Únete a Patreon!</a>
+
+</div>
+
+</div>
+<div id="menu">
+	<button id="home" title="Inicio" class="btn btn-primary glow-on-hover"><i class="fa fa-home"></i></button>
+<button id="showDalasReview" title="Canal Principal" class="btn btn-primary glow-on-hover"><i class="fa fa-youtube"></i></button>
+<button id="showDalasSinFiltros" title="Dalas Sin Filtros" class="btn btn-primary glow-on-hover"><i class="fa fa-youtube"></i></button>
+<button id="twitter" title="Twitter" class="btn btn-primary glow-on-hover"><i class="fa fa-twitter"></i></button>
+</div>
+
+</div>
+<div class="space stars1"></div>
+<div class="space stars2"></div>
+<div class="space stars3"></div>
